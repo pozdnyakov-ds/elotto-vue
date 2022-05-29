@@ -1,20 +1,18 @@
 <template>
   <app-header></app-header>
-  <div>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-  </div>
-
   <RouterView />
+  <app-footer></app-footer>
 </template>
 
 <script>
   import { RouterLink, RouterView } from 'vue-router'
   import AppHeader from './components/AppHeader.vue'
+  import AppFooter from './components/AppFooter.vue'
 
   export default {
     components: {
-      AppHeader
+      AppHeader,
+      AppFooter
     }
   }
 </script>
